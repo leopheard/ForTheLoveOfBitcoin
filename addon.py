@@ -2,18 +2,18 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-url1 = ""
+url1 = "https://feeds.buzzsprout.com/1655380.rss"
 @plugin.route('/')
 def main_menu():
     items = [
         {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('episodes1'),
-            'thumbnail': ""},
+            'thumbnail': "https://podcastaddict.com/cache/artwork/thumb/3235306"},
         {
             'label': plugin.get_string(30000),
             'path': plugin.url_for('episodes'),
-            'thumbnail': ""},
+            'thumbnail': "https://podcastaddict.com/cache/artwork/thumb/3235306"},
     ]
     return items
 
